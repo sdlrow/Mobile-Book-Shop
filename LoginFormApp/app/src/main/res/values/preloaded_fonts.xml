@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/great_vibes</item>
+        <item>@font/lovers_quarrel</item>
+        <item>@font/tajawal_extralight</item>
+        <item>@font/tenor_sans</item>
+    </array>
+</resources>

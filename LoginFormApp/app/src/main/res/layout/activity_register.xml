@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/data_color_blue"
+            android:src="@drawable/ic_login">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="670dp"
+            android:background="@color/data_color_blue"
+            android:src="@drawable/ic_login">
+
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_border"
+            android:src="@drawable/ic_login">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/tenor_sans"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/REusername"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_back"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:hint="@string/username"
+                android:padding="15dp"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:inputType="textFilter"
+
+                android:paddingStart="15dp">
+
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_point" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/REemail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_back"
+                android:drawableStart="@drawable/email_user"
+                android:drawablePadding="5dp"
+                android:hint="Email"
+                android:padding="15dp"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~!@#$%^*()-_+={}[]|\/:;',.?"
+                android:inputType="textFilter"
+
+                android:paddingStart="15dp">
+
+
+            </EditText>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_point" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RElast_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_back"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:hint="Last Name"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:inputType="textFilter"
+                android:padding="15dp"
+
+
+                android:paddingStart="15dp">
+
+
+            </EditText>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_point" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/REfirst_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_back"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:hint="First Name"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:inputType="textFilter"
+                android:padding="15dp"
+
+
+                android:paddingStart="15dp">
+
+
+            </EditText>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_point" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/REpassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_back"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:hint="@string/password"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~!@#$%^*()-_+={}[]|\/:;',.?"
+                android:inputType="textFilter"
+                android:padding="15dp"
+
+
+                android:paddingStart="15dp">
+
+
+            </EditText>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_point" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/REconfirm_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_back"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:hint="Confirm Password"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~!@#$%^*()-_+={}[]|\/:;',.?"
+                android:inputType="textFilter"
+                android:padding="15dp"
+
+
+                android:paddingStart="15dp">
+
+
+            </EditText>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_point" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_reCAPTCHA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/button_background"
+            android:text="@string/recaptcha"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/AlreadyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Already have account? Login now!"
+            android:textColor="#CD2A5E"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/ButtonSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="130dp"
+            android:background="@drawable/button_shape_log"
+            android:text="SIGN UP"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

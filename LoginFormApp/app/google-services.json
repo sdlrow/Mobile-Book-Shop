@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "646347583726",
+    "project_id": "bookshop-fdb9c",
+    "storage_bucket": "bookshop-fdb9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646347583726:android:3e728f14ef6bf4496d83ff",
+        "android_client_info": {
+          "package_name": "com.example.loginformapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646347583726-ke2tarugg9n1k6gc3a6s9bh8ks0a8fpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiDIpIuJSesrNnMd2KLNyyIvTQoO8grhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646347583726-ke2tarugg9n1k6gc3a6s9bh8ks0a8fpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

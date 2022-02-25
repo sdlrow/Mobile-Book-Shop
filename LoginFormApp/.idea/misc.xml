@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/alert_button_red.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/alert_dialog_rad.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/back_border.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/black_point.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/button_background.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/button_shape_log.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/login_background.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/login_edit_back.xml" value="0.124" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_account_info.xml" value="0.2" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_login.xml" value="0.10192147034252297" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_start.xml" value="0.10192147034252297" />
+        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/alert_custom_dialog.xml" value="0.176" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2755" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/back_border.xml" value="0.2755" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/black_point.xml" value="0.2755" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/button_background.xml" value="0.2115" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/button_backgrounf.xml" value="0.142" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/button_shape_log.xml" value="0.142" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/caution.xml" value="0.2115" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2755" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/login_background.xml" value="0.2755" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/login_edit_back.xml" value="0.2755" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/re_captcha_back.xml" value="0.142" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/red_rectangle.xml" value="0.1265" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/font/tenor_sans.xml" value="0.21822916666666667" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_reset_password.xml" value="0.2" />
+        <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_start.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

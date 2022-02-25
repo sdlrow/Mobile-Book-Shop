@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="book_shop_text_ap">
+        <item>Book everyday and everywhere</item>
+        <item>To be a closed book </item>
+        <item>To be a bookworm</item>
+        <item>To have one nose in a book</item>
+
+    </string-array>
+
+</resources>
