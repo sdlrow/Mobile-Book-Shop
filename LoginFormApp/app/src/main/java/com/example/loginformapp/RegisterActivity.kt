@@ -17,7 +17,9 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import at.favre.lib.crypto.bcrypt.BCrypt
+import com.example.loginformapp.model.Address
 import com.example.loginformapp.model.MyResponse
+import com.example.loginformapp.model.Payment
 import com.example.loginformapp.model.User
 import com.example.loginformapp.retrofit.IreCAPTCHA
 import com.example.loginformapp.retrofit.RetrofitClient
@@ -163,102 +165,122 @@ class RegisterActivity : AppCompatActivity() {
 //
 
                 if(!reCaptchaStatus){
-                        com.google.android.gms.safetynet.SafetyNet.getClient(this@RegisterActivity)
-                            .verifyWithRecaptcha(com.example.loginformapp.RegisterActivity.Companion.SAFETY_NET_SITE_KEY)
-                            .addOnSuccessListener { response ->
-                                if(response.tokenResult!!.isNotEmpty())
-                                    verifyTokenOnServer(response.tokenResult)
-                                val passHash = BCrypt.withDefaults().hashToString(12, password.toCharArray())
-                                Log.d("register", passHash)
-                                val data = User(username, email, last_name, first_name, passHash)
-                                FirebaseApp.initializeApp(this)
-                                var check: Boolean = false
-                                database = FirebaseDatabase.getInstance().getReference("user/login")
-                                database.child(username).get().addOnSuccessListener {
-                                    if(it.exists()){
-                                       Toast.makeText(baseContext, "This Username is already Registered", Toast.LENGTH_LONG).show()
-                                    }
-                                    else{
-
-                                        mAuth = FirebaseAuth.getInstance()
-                                        progressBar!!.visibility = View.VISIBLE
-                                        mAuth.createUserWithEmailAndPassword(email, password)
-                                            .addOnCompleteListener (this) { task ->
-                                                if (task.isSuccessful) {
-                                                    Log.d("mAuth", "SUCCESS")
-                                                    val passHash = BCrypt.withDefaults().hashToString(12, password.toCharArray())
-                                                    Log.d("register", passHash)
-                                                    val data = User(username, email, last_name, first_name, passHash)
-                                                    FirebaseApp.initializeApp(this)
-                                                    var check: Boolean = false
-                                                    database = FirebaseDatabase.getInstance().getReference("user/login")
-                                                    database.child(username).get().addOnSuccessListener {
-                                                        if (it.exists()) {
-                                                            Toast.makeText(
-                                                                baseContext,
-                                                                "This Username is already Registered",
-                                                                Toast.LENGTH_LONG
-                                                            ).show()
-                                                            progressBar!!.visibility = View.GONE
-                                                        } else {
-                                                            Log.d("WTF", "WTF")
-                                                            FirebaseDatabase.getInstance()
-                                                                .getReference("user/login/$username").setValue(data)
-                                                                .addOnSuccessListener {
-                                                                    val navTo =Intent(this, LoginActivity::class.java)
-                                                                    reCaptchaStatus = true
-                                                                    message = "Account Created Successfully!"
-                                                                    var stringValue: ArrayList<String> = ArrayList()
-                                                                    stringValue.add(message)
-                                                                    stringValue.add(reCaptchaStatus.toString())
-                                                                    Log.d("WER2", stringValue[0].toString())
-                                                                    Log.d("WER2", stringValue[1].toString())
-                                                                    progressBar!!.visibility = View.GONE
-                                                                    navTo.putExtra("key", stringValue)
-//                                                                  navTo.putExtra((LoginActivity.captchaFromRegisrer).toString(), reCaptchaStatus.toString())
-                                                                    startActivity(navTo)
-                                                                    CustomIntent.customType(this, "up-to-bottom")
-//                                                                  Toast.makeText(baseContext, "Account Created Successfully!", Toast.LENGTH_SHORT).show()
-                                                                }
-                                                                .addOnFailureListener {
-                                                                    Toast.makeText(
-                                                                        baseContext,
-                                                                        "Cannot Register Account!",
-                                                                        Toast.LENGTH_SHORT
-                                                                    ).show()
-                                                                    progressBar!!.visibility = View.GONE
-                                                                }
-                                                        }
-                                                    }
-
-                                                        .addOnFailureListener {
-                                                            check = false
-                                                            Log.d("checkAccountOut", check.toString())
-                                                        }
-
-                                                } else {
-                                                    Toast.makeText(baseContext, "This Email already Registered", Toast.LENGTH_SHORT).show()
-                                                    Log.d("mAuth", "This Email already Registered")
-                                                }
-                                            }
-
-                                    }
-                                }
-
-                                    .addOnFailureListener {
-                                        check = false
-                                        Log.d("checkAccountOut", check.toString())
-                                    }
-
-                            }
-                            .addOnFailureListener {  e->
-                                if (e is com.google.android.gms.common.api.ApiException){
-                                    android.util.Log.d("EDMTERROR", "Error: "+ com.google.android.gms.common.api.CommonStatusCodes.getStatusCodeString(e.statusCode))
+                    com.google.android.gms.safetynet.SafetyNet.getClient(this@RegisterActivity)
+                        .verifyWithRecaptcha(com.example.loginformapp.RegisterActivity.Companion.SAFETY_NET_SITE_KEY)
+                        .addOnSuccessListener { response ->
+                            if(response.tokenResult!!.isNotEmpty())
+                                verifyTokenOnServer(response.tokenResult)
+                            val passHash = BCrypt.withDefaults().hashToString(12, password.toCharArray())
+                            Log.d("register", passHash)
+                            val data = User(username, email, last_name, first_name, passHash)
+                            FirebaseApp.initializeApp(this)
+                            var check: Boolean = false
+                            database = FirebaseDatabase.getInstance().getReference("user/login")
+                            database.child(username).get().addOnSuccessListener {
+                                if(it.exists()){
+                                    Toast.makeText(baseContext, "This Username is already Registered", Toast.LENGTH_LONG).show()
                                 }
                                 else{
-                                    android.util.Log.d("EDMTERROR", "Unknown Error has occured")
+
+                                    mAuth = FirebaseAuth.getInstance()
+                                    progressBar!!.visibility = View.VISIBLE
+                                    mAuth.createUserWithEmailAndPassword(email, password)
+                                        .addOnCompleteListener (this) { task ->
+                                            if (task.isSuccessful) {
+                                                Log.d("mAuth", "SUCCESS")
+                                                val passHash = BCrypt.withDefaults().hashToString(12, password.toCharArray())
+                                                Log.d("register", passHash)
+                                                val data = User(username, email, last_name, first_name, passHash)
+                                                FirebaseApp.initializeApp(this)
+                                                var check: Boolean = false
+                                                database = FirebaseDatabase.getInstance().getReference("user/login")
+                                                database.child(username).get().addOnSuccessListener {
+                                                    if (it.exists()) {
+                                                        Toast.makeText(
+                                                            baseContext,
+                                                            "This Username is already Registered",
+                                                            Toast.LENGTH_LONG
+                                                        ).show()
+                                                        progressBar!!.visibility = View.GONE
+                                                    } else {
+                                                        Log.d("WTF", "WTF")
+                                                        FirebaseDatabase.getInstance()
+                                                            .getReference("user/login/$username").setValue(data)
+                                                            .addOnSuccessListener {
+                                                                val navTo =Intent(this, LoginActivity::class.java)
+                                                                reCaptchaStatus = true
+                                                                message = "Account Created Successfully!"
+
+                                                                Log.d("Address", "address")
+                                                                val data_address = Address("", "", "","", "", "")
+                                                                FirebaseDatabase.getInstance()
+                                                                    .getReference("user/address/$username").setValue(data_address)
+                                                                    .addOnSuccessListener {
+                                                                        Log.d("Address", "address_reg")
+                                                                    }
+                                                                Log.d("Payment", "payment")
+                                                                val data_payment = Payment("", "", "","", "")
+                                                                FirebaseDatabase.getInstance()
+                                                                    .getReference("user/payment/$username").setValue(data_payment)
+                                                                    .addOnSuccessListener {
+                                                                        Log.d("Payment", "payment_reg")
+                                                                    }
+
+
+                                                                var stringValue: ArrayList<String> = ArrayList()
+                                                                stringValue.add(message)
+                                                                stringValue.add(reCaptchaStatus.toString())
+                                                                Log.d("WER2", stringValue[0].toString())
+                                                                Log.d("WER2", stringValue[1].toString())
+                                                                progressBar!!.visibility = View.GONE
+                                                                navTo.putExtra("key", stringValue)
+//                                                                  navTo.putExtra((LoginActivity.captchaFromRegisrer).toString(), reCaptchaStatus.toString())
+                                                                startActivity(navTo)
+                                                                CustomIntent.customType(this, "up-to-bottom")
+//                                                                  Toast.makeText(baseContext, "Account Created Successfully!", Toast.LENGTH_SHORT).show()
+                                                            }
+                                                            .addOnFailureListener {
+                                                                Toast.makeText(
+                                                                    baseContext,
+                                                                    "Cannot Register Account!",
+                                                                    Toast.LENGTH_SHORT
+                                                                ).show()
+                                                                progressBar!!.visibility = View.GONE
+                                                            }
+
+
+                                                    }
+                                                }
+
+                                                    .addOnFailureListener {
+                                                        check = false
+                                                        Log.d("checkAccountOut", check.toString())
+                                                    }
+
+                                            } else {
+                                                Toast.makeText(baseContext, "This Email already Registered", Toast.LENGTH_SHORT).show()
+                                                Log.d("mAuth", "This Email already Registered")
+                                                progressBar!!.visibility = View.GONE
+                                            }
+                                        }
+
                                 }
                             }
+
+                                .addOnFailureListener {
+                                    check = false
+                                    Log.d("checkAccountOut", check.toString())
+                                }
+
+                        }
+                        .addOnFailureListener {  e->
+                            if (e is com.google.android.gms.common.api.ApiException){
+                                android.util.Log.d("EDMTERROR", "Error: "+ com.google.android.gms.common.api.CommonStatusCodes.getStatusCodeString(e.statusCode))
+                            }
+                            else{
+                                android.util.Log.d("EDMTERROR", "Unknown Error has occured")
+                            }
+                        }
                 }
                 if(password == confirm_password && reCaptchaStatus) {
 
@@ -291,6 +313,24 @@ class RegisterActivity : AppCompatActivity() {
                                                 val navTo =Intent(this, LoginActivity::class.java)
                                                 reCaptchaStatus = true
                                                 message = "Account Created Successfully!"
+
+
+                                                Log.d("Address", "address")
+                                                val data_address = Address("", "", "","", "", "")
+                                                FirebaseDatabase.getInstance()
+                                                    .getReference("user/address/$username").setValue(data_address)
+                                                    .addOnSuccessListener {
+                                                        Log.d("Address", "address_reg")
+                                                    }
+                                                Log.d("Payment", "payment")
+                                                val data_payment = Payment("", "", "","", "")
+                                                FirebaseDatabase.getInstance()
+                                                    .getReference("user/payment/$username").setValue(data_payment)
+                                                    .addOnSuccessListener {
+                                                        Log.d("Payment", "payment_reg")
+                                                    }
+
+
                                                 var stringValue: ArrayList<String> = ArrayList()
                                                 stringValue.add(message)
                                                 stringValue.add(reCaptchaStatus.toString())
@@ -322,6 +362,7 @@ class RegisterActivity : AppCompatActivity() {
                             } else {
                                 Toast.makeText(baseContext, "This Email already Registered", Toast.LENGTH_SHORT).show()
                                 Log.d("mAuth", "This Email already Registered")
+                                progressBar!!.visibility = View.GONE
                             }
                         }
 

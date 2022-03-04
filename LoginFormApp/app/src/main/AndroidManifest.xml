@@ -13,12 +13,24 @@
         android:theme="@style/Theme.LoginFormApp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".AccountInfoActivity"
+            android:name=".ChangePasswordActivity"
             android:exported="false" />
+        <activity
+            android:name=".ActivityShipping"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainBookActivity"
+            android:exported="false"/>
         <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/Theme.LoginFormApp" />
+        <activity
+            android:name=".AfterLoginPage"
+            android:exported="false" />
         <activity
             android:name=".ResetPasswordActivity"
             android:exported="false" />
@@ -27,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".StartActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

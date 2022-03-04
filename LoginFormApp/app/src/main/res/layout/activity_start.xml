@@ -68,14 +68,13 @@
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/great_vibes"
             android:gravity="center"
+            app:texts="@array/book_shop_text_ap"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:texts="@array/book_shop_text_ap"
             app:timeout="2000">
 
         </com.tomer.fadingtextview.FadingTextView>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -109,10 +108,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="35dp"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
             android:layout_marginEnd="35dp"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/button_background"
             android:src="@drawable/ic_login">
 

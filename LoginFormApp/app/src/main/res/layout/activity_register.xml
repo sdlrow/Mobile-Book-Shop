@@ -240,7 +240,7 @@
                 android:drawablePadding="5dp"
                 android:hint="@string/password"
                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~!@#$%^*()-_+={}[]|\/:;',.?"
-                android:inputType="textFilter"
+                android:inputType="textPassword"
                 android:padding="15dp"
 
 
@@ -281,7 +281,7 @@
                 android:drawablePadding="5dp"
                 android:hint="Confirm Password"
                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~!@#$%^*()-_+={}[]|\/:;',.?"
-                android:inputType="textFilter"
+                android:inputType="textPassword"
                 android:padding="15dp"
 
 

@@ -8,4 +8,10 @@
     <string name="login">LOGIN</string>
     <string name="no_account_yet_create_one">No account yet? Create one</string>
     <string name="register">REGISTER</string>
+    <string name="user">User</string>
+    <string name="Edit">Edit information</string>
+    <string name="save">Save</string>
+    <string name="payment">Payment Method</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

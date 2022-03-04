@@ -123,7 +123,9 @@ class LoginActivity : AppCompatActivity() {
                                     Log.d("HUETA", result.toString())
                                     if(result.verified){
                                         Toast.makeText(baseContext, "Login Successfully", Toast.LENGTH_LONG).show()
-                                        val navTo = startActivity(Intent(this, AccountInfoActivity::class.java))
+                                        val navTo =Intent(this, MainBookActivity::class.java)
+                                        navTo.putExtra("usernameData", usernameLogin.toString())
+                                        startActivity(navTo)
                                         CustomIntent.customType(this, "fadein-to-fadeout")
                                         Log.d("checkStatus", checkStatus.toString())
                                         if(checkStatus){
@@ -181,7 +183,9 @@ class LoginActivity : AppCompatActivity() {
                             val result = BCrypt.verifyer().verify(password.toCharArray(), hashPass)
                             if(result.verified){
                                 Toast.makeText(baseContext, "Login Successfully", Toast.LENGTH_LONG).show()
-                                val navTo = startActivity(Intent(this, AccountInfoActivity::class.java))
+                                val navTo =Intent(this, MainBookActivity::class.java)
+                                navTo.putExtra("usernameData", usernameLogin.toString())
+                                startActivity(navTo)
                                 CustomIntent.customType(this, "fadein-to-fadeout")
                                 Log.d("checkStatus1", preferences.getBoolean("remember", false).toString())
                                 if(checkStatus){

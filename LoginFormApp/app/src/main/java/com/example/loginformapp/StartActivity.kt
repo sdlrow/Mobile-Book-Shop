@@ -27,7 +27,7 @@ class StartActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start)
+            setContentView(R.layout.activity_start)
         var preferences: SharedPreferences = getSharedPreferences("UserDataBook", Context.MODE_PRIVATE)
         dataUserCheckOn = preferences.getBoolean("remember", false)
         dataUsernameCheckOn = preferences.getString("username", "").toString()
@@ -37,6 +37,7 @@ class StartActivity : AppCompatActivity() {
         Log.d("checkStatus1", dataUserCheckOn.toString())
         Log.d("checkStatus1", dataUsernameCheckOn.toString())
         Log.d("checkStatus1", dataPasswordCheckOn .toString())
+
 
         if(dataUserCheckOn){
             progressBar!!.visibility = View.VISIBLE
@@ -56,7 +57,7 @@ class StartActivity : AppCompatActivity() {
                         Handler().postDelayed({
                             progressBar!!.visibility = View.INVISIBLE
                             window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
-                            val navTo = startActivity(Intent(this, AccountInfoActivity::class.java))
+                            val navTo = startActivity(Intent(this, MainBookActivity::class.java))
                             CustomIntent.customType(this, "fadein-to-fadeout")
                         }, 2000)
                     }

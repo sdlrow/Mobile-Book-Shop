@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:title="Profile"
+                android:icon="@drawable/ic_account"/>
+            <item
+                android:id="@+id/nav_shipping_address"
+                android:icon="@drawable/ic_shipping"
+                android:title="Shipping address" />
+            <item
+                android:id="@+id/nav_password"
+                android:icon="@drawable/ic_passwordd"
+                android:title="Password" />
+            <item
+                android:id="@+id/nav_payment"
+                android:icon="@drawable/ic_baseline_payment_24"
+                android:title="Payment" />
+            <item
+                android:id="@+id/nav_orders"
+                android:icon="@drawable/ic_menu_book"
+                android:title="Orders" />
+
+
+
+
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact_support"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+
+</menu>

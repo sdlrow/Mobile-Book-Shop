@@ -3,18 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/alert_button_red.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/alert_dialog_rad.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/back_border.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/black_point.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/button_background.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/button_shape_log.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/login_background.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/login_edit_back.xml" value="0.124" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_account_info.xml" value="0.2" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_login.xml" value="0.10192147034252297" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_start.xml" value="0.10192147034252297" />
-        <entry key="..\:/Users/Nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/alert_custom_dialog.xml" value="0.176" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/drawable-v24/ic_password.xml" value="0.1" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/drawable/back_border.xml" value="0.1295" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/drawable/black_point.xml" value="0.1295" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/drawable/button_shape_log.xml" value="0.1295" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/drawable/ic_password.xml" value="0.1" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/drawable/pay_method_border.xml" value="0.169" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_after_login.xml" value="0.22" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_change_password.xml" value="0.22" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_login.xml" value="0.14743589743589744" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_main_book.xml" value="0.16666666666666666" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_main_book_.xml" value="0.14743589743589744" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_register.xml" value="0.14743589743589744" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_reset_password.xml" value="0.14743589743589744" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_shipping.xml" value="0.16666666666666666" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/activity_start.xml" value="0.22" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/nav_header.xml" value="0.14743589743589744" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/layout/user_edit_dialog_layout.xml" value="0.2230971128608924" />
+        <entry key="..\:/LoginFormApp/app/src/main/res/menu/drawer_menu.xml" value="0.22" />
+        <entry key="..\:/Users/Nur/Desktop/12312/LoginFormApp/app/src/main/res/layout/activity_main_book.xml" value="0.10598290598290598" />
+        <entry key="..\:/Users/Nur/Desktop/12312/LoginFormApp/app/src/main/res/layout/card_layout.xml" value="0.264" />
         <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2755" />
         <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/back_border.xml" value="0.2755" />
         <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/drawable/black_point.xml" value="0.2755" />
@@ -33,6 +42,40 @@
         <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_reset_password.xml" value="0.2" />
         <entry key="..\:/Users/nur/AndroidStudioProjects/LoginFormApp/app/src/main/res/layout/activity_start.xml" value="0.25" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable-v24/ic_passwordd.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/back_border.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/black_point.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/book_background.xml" value="0.1375" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/button_back_log.xml" value="0.1255" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/button_background.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/button_shape_log.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/caution.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/ic_account.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/ic_baseline_payment_24.xml" value="0.1265" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/ic_contact_support.xml" value="0.1375" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/ic_menu_book.xml" value="0.1375" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/ic_payment.xml" value="0.1265" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/ic_shipping.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/login_background.xml" value="0.1375" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/login_edit_back.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/pay_method_border.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/re_captcha_back.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/drawable/red_rectangle.xml" value="0.1105" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_after_login.xml" value="0.25" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_change_password.xml" value="0.25" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_login.xml" value="0.18974358974358974" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_main_book.xml" value="0.22" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_profile.xml" value="0.18974358974358974" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_reset_password.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_shipping.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/activity_start.xml" value="0.18" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/card_layout.xml" value="0.25" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/layout/user_edit_dialog_layout.xml" value="0.18974358974358974" />
+        <entry key="..\:/Users/nur/Desktop/23432/123/LoginFormApp/app/src/main/res/menu/drawer_menu.xml" value="0.26919831223628693" />
       </map>
     </option>
   </component>
